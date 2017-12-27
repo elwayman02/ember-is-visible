@@ -1,5 +1,9 @@
 # Ember-Is-Visible
 
+[![Build Status](https://travis-ci.org/elwayman02/ember-is-visible.svg?branch=master)](https://travis-ci.org/elwayman02/ember-is-visible)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-is-visible.svg)](https://emberobserver.com/addons/ember-is-visible)
+[![Code Climate](https://codeclimate.com/github/elwayman02/ember-is-visible/badges/gpa.svg)](https://codeclimate.com/github/elwayman02/ember-is-visible)
+
 This addon provides a `visibility` service to track whether your app is currently visible.
 
 Click to see the [demo](http://jhawk.co/ember-visible-demo)!
