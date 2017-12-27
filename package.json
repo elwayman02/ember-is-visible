@@ -1,6 +1,6 @@
 {
   "name": "ember-is-visible",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Visibility Detection for Ember Apps",
   "keywords": [
     "ember-addon",
