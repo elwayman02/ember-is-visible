@@ -2,9 +2,11 @@
 
 This addon provides a `visibility` service to track whether your app is currently visible.
 
+Click to see the [demo](http://jhawk.co/ember-visible-demo)!
+
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/elwayman02/ember-is-visible` this repository
 * `cd ember-is-visible`
 * `npm install`
 
