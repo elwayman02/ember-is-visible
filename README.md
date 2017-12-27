@@ -1,6 +1,6 @@
-# ember-is-visible
+# Ember-Is-Visible
 
-This README outlines the details of collaborating on this Ember addon.
+This addon provides a `visibility` service to track whether your app is currently visible.
 
 ## Installation
 
@@ -8,18 +8,34 @@ This README outlines the details of collaborating on this Ember addon.
 * `cd ember-is-visible`
 * `npm install`
 
-## Running
+## Usage
+
+Simply inject the `visibility` service and check the `visible` and `lostVisibility` properties:
+
+#### `visible`
+
+Indicates whether the app is currently visible
+
+#### `lostVisibility`
+
+Indicates if the app has ever not been visible during the current session.
+
+## Development
+
+This section outlines the details of collaborating on this Ember addon.
+
+### Running
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-## Running Tests
+### Running Tests
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-## Building
+### Building
 
 * `ember build`
 
