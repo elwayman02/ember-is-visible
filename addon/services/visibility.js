@@ -20,12 +20,21 @@ export const APIs = {
  * https://whatwebcando.today/foreground-detection.html
  */
 export const detectApi = function(_document = {}) {
-  if (isPresent(get(_document, 'hidden'))) { return APIs.global; }
-  if (isPresent(get(_document, 'webkitHidden'))) { return APIs.webkit; }
-  if (isPresent(get(_document, 'mozHidden'))) { return APIs.mozilla; }
-  if (isPresent(get(_document, 'msHidden'))) { return APIs.ie; }
+  let api;
 
-  return APIs.unsupported;
+  if (isPresent(get(_document, 'hidden'))) {
+    api = APIs.global;
+  } else if (isPresent(get(_document, 'webkitHidden'))) {
+    api = APIs.webkit;
+  } else if (isPresent(get(_document, 'mozHidden'))) {
+    api = APIs.mozilla;
+  } else if (isPresent(get(_document, 'msHidden'))) {
+    api = APIs.ie;
+  } else {
+    api = APIs.unsupported;
+  }
+
+  return api;
 };
 
 /**
