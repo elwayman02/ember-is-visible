@@ -85,10 +85,11 @@ export default Service.extend({
    * Event handler.
    */
   _handleDocumentVisibilityChange() {
+    if (this.isDestroyed || this.isDestroying) { return; }
+
     const hiddenFlagName = this.get('pageVisibilityAPI.hiddenFlag');
     const isHidden = get(document, hiddenFlagName);
 
-    if (this.isDestroyed) { return; }
 
     this.set('visible', !isHidden);
 
